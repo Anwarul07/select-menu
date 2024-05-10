@@ -5,13 +5,17 @@ let SelectFiled = document.getElementsByClassName("selectfiled");
 let SelectText = document.querySelector("#selectText");
 let options = document.getElementsByClassName("options");
 let list = document.getElementById("list");
+let arrow = document.getElementById("arr");
 
 
+SelectText.addEventListener("click", () => {
+   list.classList.toggle("swipe");
+});
 
-SelectFiled.onclick = function () {
-   list.classList.toggle("hide");
+arrow.addEventListener("click", () => {
+   list.classList.toggle("swipe");
+});
 
-};
 
 for (option of options) {
    option.onclick = function () {
