@@ -52,3 +52,9 @@
   top: 12px;
   left: 25px;
 }
+.options:hover{
+    background: rgba(255, 255, 255, 0.7);
+}
+.swipe{
+  visibility: hidden;
+}
